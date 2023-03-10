@@ -42,19 +42,19 @@ public class CustomListTest {
      * add city, test if it it can observe
      * then test if correctly identifies missing city
      */
-//    @Test
-//    public void hasCityTest(){
-//        list = MockCityList();
-//        City ev = new City("Estevan", "SK");
-//        list.addCity(ev);
-//        assertTrue(list.hasCity(ev));
-//
-//        City ed = new City("Edmonton", "AB");
-//        assertFalse(list.hasCity(ed));
-//        list.addCity(ed);
-//        assertTrue(list.hasCity(ed));
-//
-//    }
+    @Test
+    public void hasCityTest(){
+        list = MockCityList();
+        City ev = new City("Estevan", "SK");
+        list.addCity(ev);
+        assertTrue(list.hasCity(ev));
+
+        City ed = new City("Edmonton", "AB");
+        assertFalse(list.hasCity(ed));
+        list.addCity(ed);
+        assertTrue(list.hasCity(ed));
+
+    }
 
     /**
      * add city, check that it exists
