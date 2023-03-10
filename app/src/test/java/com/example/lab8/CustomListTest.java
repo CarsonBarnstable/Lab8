@@ -60,16 +60,16 @@ public class CustomListTest {
      * add city, check that it exists
      * then delete and see if successfully deletes
      */
-//    @Test
-//    public void deleteCityTest(){
-//        list = MockCityList();
-//        City ev = new City("Estevan", "SK");
-//        list.addCity(ev);
-//        assertTrue(list.hasCity(ev));
-//
-//        list.deleteCity(ev);
-//        assertFalse(list.hasCity(ev));
-//    }
+    @Test
+    public void deleteCityTest(){
+        list = MockCityList();
+        City ev = new City("Estevan", "SK");
+        list.addCity(ev);
+        assertTrue(list.hasCity(ev));
+
+        list.deleteCity(ev);
+        assertFalse(list.hasCity(ev));
+    }
 
     /**
      * add city, check that count is 1
